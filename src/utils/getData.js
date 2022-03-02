@@ -1,5 +1,4 @@
-// const API = process.env.API;
-const API = "https://pokeapi.co/api/v2/";
+const API = process.env.API;
 
 const getData = async (id) => {
   const apiURL = id ? `${API}${id}` : API;

@@ -1,8 +1,6 @@
 import "bootstrap";
-import "./styles/main.scss";
-import Template from "./templates/Template";
+import "@styles/main.scss";
+import router from "@routes";
 
-(async function App() {
-  const main = null || document.getElementById("app");
-  main.innerHTML = await Template();
-})();
+window.addEventListener("load", router);
+window.addEventListener("hashchange", router);

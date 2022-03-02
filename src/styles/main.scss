@@ -1,1 +1,70 @@
 @import "~bootstrap/scss/bootstrap";
+
+.sprite {
+  height: 96px;
+  width: 96px;
+}
+
+.artwork {
+  height: 350px;
+  width: 350px;
+}
+
+.normal {
+  background-color: #f6eac2;
+}
+.fire {
+  background-color: #ff968a;
+}
+.fighting {
+  background-color: #d4a094;
+}
+.water {
+  background-color: #a2e1db;
+}
+.flying {
+  background-color: #bcaaf3;
+}
+.grass {
+  background-color: #ddf5c2;
+}
+.poison {
+  background-color: #c770c7;
+}
+.electric {
+  background-color: #ffe677;
+}
+.ground {
+  background-color: #f7d67c;
+}
+.psychic {
+  background-color: #ff7aa2;
+}
+.rock {
+  background-color: #beac59;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.bug {
+  background-color: #b6c440;
+}
+.dragon {
+  background-color: #8b5bfc;
+}
+.ghost {
+  background-color: #8169a8;
+}
+.dark {
+  background-color: #63544b;
+}
+.steel {
+  background-color: #c5c5dd;
+}
+.fairy {
+  background-color: #f5b3c2;
+}
+
+.vh-80{
+  height: 80vh;
+}

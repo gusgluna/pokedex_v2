@@ -1,8 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const ProgressPlugin = require("progress-webpack-plugin");
@@ -12,9 +10,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
-    clean: true,
   },
-  mode: "production",
+  mode: "development",
+  watch: true,
   resolve: {
     extensions: [".js"],
     alias: {
@@ -56,8 +54,4 @@ module.exports = {
     new Dotenv(),
     new ProgressPlugin(true),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
 };

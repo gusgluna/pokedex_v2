@@ -108,11 +108,17 @@ const getPokedex = async (id) => {
                 <div class="modal-content bg-dark text-light">
                   <div class="modal-header">
                     <h5
-                      class="modal-title mx-auto text-capitalize"
+                      class="modal-title text-center text-capitalize"
                       id="modal${pokemon.id}Label"
                     >
                       ${pokemon.name}
                     </h5>
+                    <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                    </button>
                   </div>
                     <div class="modal-body">
                       <img
